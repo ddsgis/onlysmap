@@ -1,0 +1,151 @@
+ //to reset element-ui default css
+ .el-upload {
+   input[type="file"] {
+     display: none !important;
+   }
+ }
+
+ .el-upload__input {
+   display: none;
+ }
+
+ //暂时性解决diolag 问题 https://github.com/ElemeFE/element/issues/2461
+ .el-dialog {
+   transform: none;
+   left: 0;
+   position: relative;
+   margin: 0 auto;
+ }
+
+ //element ui upload
+ .upload-container {
+   .el-upload {
+     width: 100%;
+
+     .el-upload-dragger {
+       width: 100%;
+       height: 200px;
+     }
+   }
+ }
+
+ .el-alert {
+   margin-bottom: 10px;
+ }
+
+ .el-dialog__wrapper {
+   z-index: 1111;
+ }
+
+ .el-card {
+   margin: 10px 0;
+ }
+
+ .el-form {
+   margin: 10px 0;
+ }
+
+ .el-select {
+   width: 100%;
+ }
+
+ .el-form--label-top .el-form-item__label {
+   padding: 0;
+ }
+
+ .el-form-item {
+   //  margin-bottom: 10px;
+ }
+
+ .el-date-editor.el-input {
+   width: 100%;
+ }
+
+ .el-input-group__prepend {
+   padding: 0 10px;
+ }
+
+ .el-steps--simple {
+   padding: 10px 5%;
+ }
+
+ .el-collapse {
+   border-top: transparent;
+ }
+
+ .el-collapse-item__header.is-active {
+   border-bottom: 1px solid #ebeef5;
+ }
+
+ .avatar-uploader .el-upload {
+   border: 1px dashed #d9d9d9;
+   border-radius: 6px;
+   cursor: pointer;
+   position: relative;
+   overflow: hidden;
+ }
+
+ .avatar-uploader .el-upload:hover {
+   border-color: #409eff;
+ }
+
+ .avatar-uploader-icon {
+   font-size: 28px;
+   color: #8c939d;
+   width: 178px;
+   height: 178px;
+   line-height: 178px;
+   text-align: center;
+ }
+
+ .avatar {
+   width: 178px;
+   height: 178px;
+   display: block;
+ }
+
+ .el-dialog__body {
+   padding: 5px 10px;
+ }
+
+ .el-card__body {
+   padding: 10px;
+ }
+
+ .x-dialog {
+   width: 700px;
+   position: fixed;
+   right: 20px;
+   bottom: calc(100vh - 650px);
+   left: auto;
+   top: 50px;
+
+   /deep/ .el-dialog {
+     margin: 0 !important;
+     width: 100% !important;
+     background-color: rgba($color: #ffffff, $alpha: .8);
+
+     .el-card {
+       background-color: transparent;
+       border: 1px solid transparent;
+     }
+
+     .el-textarea__inner,
+     .el-input__inner {
+       background-color: transparent;
+       border: 1px solid #67c23a;
+       color: #000000;
+     }
+
+     /deep/ .el-alert--success {
+       background-color: transparent;
+       border-bottom: 1px solid #67c23a;
+       border-radius: 0;
+     }
+
+     /deep/ .el-form-item__label,
+     .el-alert__title {
+       color: #000000;
+     }
+   }
+ }
