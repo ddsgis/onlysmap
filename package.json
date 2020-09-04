@@ -63,7 +63,7 @@
     "mockjs": "^1.0.1-beta3",
     "moment": "^2.23.0",
     "node-notifier": "5.2.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "optimize-css-assets-webpack-plugin": "5.0.0",
     "ora": "3.0.0",
     "path-to-regexp": "2.4.0",
